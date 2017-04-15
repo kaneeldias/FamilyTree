@@ -1,0 +1,104 @@
+.form_error_msg{
+    font-size:14px;
+    line-height:20px;
+    color:red;
+    display:block;
+    text-overflow: ellipsis;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#comment_form_container{
+    max-width:960px;
+}
+
+#comment_form{
+}
+
+.input_box{
+    margin:20px;
+}
+
+.input_label{
+    font-weight:bold;
+    font-size:16px;
+    margin-bottom:0px;
+}
+
+.input_item input, .input_item textarea, .input_item select{
+    padding: 7px;
+    transition: all 0.2s;
+    outline: 0;
+    border-color: #999999;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 1px;
+    display: table-cell;
+    width: 95%;
+}
+
+.input_item textarea{
+    min-height:100px;
+}
+
+.input_item input:focus, .input_item textarea:focus .input_item select:focus{
+    border-color:#C0392B;
+    outline:0;
+}
+
+@media screen and (max-width: 960px) {
+
+    .input_item textarea{
+        min-height:100px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #comment_form{
+    }
+
+    .input_item input{
+    }
+
+    .input_item textarea{
+        min-height:100px;
+    }
+}
+
+md-radio-group.layout-row md-radio-button{
+    margin-right:50px;
+}
+
+md-radio-button.md-default-theme .md-on, md-radio-button .md-on {
+    background-color:#C0392B;
+}
+
+md-radio-button.md-default-theme.md-checked .md-off, md-radio-button.md-checked .md-off {
+    border-color:#C0392B;
+}
+
+md-radio-button.md-default-theme.md-checked .md-ink-ripple, md-radio-button.md-checked .md-ink-ripple {
+    color:#C0392B;
+}
+
+md-checkbox.md-default-theme.md-checked .md-ink-ripple, md-checkbox.md-checked .md-ink-ripple {
+    color:#C0392B;
+}
+
+md-checkbox.md-default-theme.md-checked .md-icon, md-checkbox.md-checked .md-icon {
+    background-color:#C0392B;
+}
+
+.form_error_msg.ng-hide-add, .form_error_msg.ng-hide-remove {
+    transition: all linear 0.2s;
+}
+
+.form_error_msg.ng-hide {
+    opacity: 0;
+    line-height:0px;
+}
+
+.errors_box{
+    margin-top:3px;
+}
